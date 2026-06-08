@@ -8,22 +8,34 @@
       name="description"
       content="Portfolio of Raymond Garrison, Software Architect. Professional experience, skills, personal projects, and experiments."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@700;900&family=Michroma&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-grid"></div>
-    <div class="bg-glow bg-glow-a"></div>
-    <div class="bg-glow bg-glow-b"></div>
+    <div class="bg-burst" aria-hidden="true"></div>
+    <div class="bg-horizon" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
 
     <header class="hero shell">
-      <nav class="site-nav shell-card">
-        <a class="brand" href="#">Raymond Garrison</a>
-        <div class="nav-links">
+      <div class="site-header">
+        <div class="logo-stage">
+          <div class="logo-trail" aria-hidden="true"></div>
+          <a class="synsonics-logo" href="#">
+            <span class="synsonics-logo__glow" aria-hidden="true">Raymond Garrison</span>
+            <span class="synsonics-logo__stroke">Raymond Garrison</span>
+          </a>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
           <a href="#experience">Experience</a>
           <a href="#lab">Maker Lab</a>
           <a href="#contact">Contact</a>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
       <div class="hero-content shell-card">
         <p class="eyebrow">Software Architect | Full Stack Engineer</p>
