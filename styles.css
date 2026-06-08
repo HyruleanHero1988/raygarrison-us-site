@@ -134,7 +134,7 @@ a:hover {
 .shell-card {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.82);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 2px solid var(--border);
@@ -279,7 +279,7 @@ a:hover {
 .text-backdrop {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
