@@ -1,0 +1,4 @@
+
+TODO:
+- add polar clock when ready 
+- add examples of wave vessles or sensor watch? More hardware focused experiments? 

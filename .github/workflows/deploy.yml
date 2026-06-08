@@ -24,6 +24,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Bundle hourly weather app
+        run: |
+          git clone --depth 1 https://github.com/HyruleanHero1988/hourly-weather.git _hourly-src
+          mkdir -p hourly
+          cp -r _hourly-src/. hourly/
+          cp hourly/hourly.html hourly/index.html
+          rm -rf _hourly-src
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

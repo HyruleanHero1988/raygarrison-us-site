@@ -29,7 +29,7 @@
         </div>
         <nav class="site-nav text-backdrop" aria-label="Primary">
           <a href="#experience">Experience</a>
-          <a href="#lab">Maker Lab</a>
+          <a href="#lab">Side Projects</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -38,19 +38,20 @@
         <p class="eyebrow">Software Architect | Full Stack Engineer</p>
         <h1>
           Enterprise-grade delivery by day.
-          <span class="gradient-text">Maker experiments by night.</span>
+          <span class="gradient-text">Side projects when curiosity strikes.</span>
         </h1>
         <p class="intro">
           I build resilient web platforms, modernize legacy systems, and turn ambiguous requirements
-          into practical software. Outside the office, I prototype tools and experiments that keep my
-          engineering edge sharp.
+          into practical software. Outside work, I occasionally build small things — usually around
+          making time and data easier to read at a glance, or following a hardware or MIDI curiosity
+          when something won't leave me alone.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#experience">Explore Experience</a>
-          <a class="button button-ghost" href="#lab">See Personal Projects</a>
+          <a class="button button-ghost" href="#lab">See Side Projects</a>
         </div>
         <ul class="metrics">
-          <li><strong>10+ years</strong> shipping production software</li>
+          <li><strong>12+ years</strong> shipping production software</li>
           <li><strong>Full stack</strong> from UX to distributed services</li>
           <li><strong>Core stacks</strong> Angular, Vue, React, Node, Java</li>
         </ul>
@@ -63,7 +64,7 @@
           <p class="section-tag">Profile</p>
           <h2>About</h2>
           <p>
-            Full Stack Developer and Software Architect with over a decade of experience building
+            Full Stack Developer and Software Architect with over 12 years of experience building
             user-friendly web applications and scalable backend services. I care about clean code,
             thoughtful system design, and collaborative teams that deliver meaningful outcomes.
           </p>
@@ -154,36 +155,53 @@
 
       <section id="lab" class="section">
         <div class="section-intro text-backdrop">
-          <p class="section-tag">Hands-on Builder</p>
-          <h2>Personal Projects and Experiments</h2>
+          <p class="section-tag">Personal Work</p>
+          <h2>Side Projects</h2>
+          <p>
+            Small builds I work on when a question sticks around — mostly ways to represent time,
+            weather, and other data so the picture is obvious without reading a table. I also tinker
+            with electronics occasionally; past experiments include circuit bending and audio-reactive
+            display mods.
+          </p>
         </div>
         <div class="cards">
-          <article class="card shell-card">
-            <h3>Tooling Prototype</h3>
-            <p>
-              Rapid utility builds focused on solving daily workflow friction, often using JavaScript,
-              Node, and lightweight UI patterns.
-            </p>
-          </article>
-          <article class="card shell-card">
-            <h3>Automation Experiments</h3>
-            <p>
-              Scripted automations for repetitive tasks and personal systems, emphasizing measurable
-              time savings and maintainability.
-            </p>
-          </article>
-          <article class="card shell-card">
-            <h3>Creative Technical Builds</h3>
-            <p>
-              Maker-side explorations that combine software with curiosity: fast iterations, sharp
-              feedback loops, and practical outcomes.
-            </p>
-          </article>
+          <a class="card shell-card" href="/hourly/">
+            <div class="card-media">
+              <img
+                src="images/hourly-weather.png"
+                alt="16-day hourly weather heatmap with color-coded temperatures and weather icons"
+                width="640"
+                height="400"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Hourly Weather</h3>
+              <p>
+                Hour-by-hour weather represented visually so conditions and trends are readable at a
+                glance, not buried in a forecast table.
+              </p>
+            </div>
+          </a>
+          <a class="card shell-card" href="https://playmysynth.com">
+            <div class="card-media">
+              <img
+                src="images/play-my-synth.png"
+                alt="Play My Synth player interface with Volca Keys knob controls and on-screen piano keyboard"
+                width="640"
+                height="400"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Play My Synth</h3>
+              <p>
+                Share your analog synth with friends anywhere. They get live audio back while playing from
+                an on-screen piano or a connected MIDI controller.
+              </p>
+            </div>
+          </a>
         </div>
-        <p class="lab-note text-backdrop">
-          Replace these with your favorite real projects, GitHub links, and screenshots as you curate
-          your portfolio.
-        </p>
       </section>
 
       <section id="contact" class="section">
