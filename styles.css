@@ -11,9 +11,6 @@
   --shadow-neon: 0 0 18px rgba(255, 40, 80, 0.35);
   --font-display: "Orbitron", "Segoe UI", sans-serif;
   --font-body: "Rajdhani", "Segoe UI", system-ui, sans-serif;
-  --font-logo: "Encode Sans Expanded", "Michroma", "Arial Black", sans-serif;
-  --logo-red: #ff2233;
-  --logo-orange: #ff5520;
 }
 
 *,
@@ -185,59 +182,35 @@ a:hover {
   clip-path: inherit;
 }
 
-/* Synsonics Drums box logo: wide extended sans, hollow red-orange neon outline */
+/* Hollow Orbitron outline — same font as .gradient-text, no interior fill */
 .synsonics-logo {
-  --logo-stroke: 4.5px;
-  position: relative;
-  isolation: isolate;
   display: inline-block;
-  font-family: var(--font-logo);
-  font-size: clamp(1.05rem, 3.6vw, 2.05rem);
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 4.2vw, 2.75rem);
   font-weight: 900;
-  line-height: 1;
-  letter-spacing: 0.16em;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
-  filter: drop-shadow(0 0 14px rgba(255, 50, 60, 0.55));
+  color: #000000;
+  -webkit-text-stroke: 2px var(--neon-red);
+  text-stroke: 2px var(--neon-red);
+  paint-order: stroke fill;
+  filter: drop-shadow(0 0 4px rgba(255, 40, 80, 0.8))
+    drop-shadow(0 0 11px rgba(255, 40, 80, 0.7))
+    drop-shadow(0 0 30px rgba(255, 40, 80, 0.6))
+    drop-shadow(0 0 80px rgba(255, 40, 80, 0.5));
   transition: filter 0.25s ease;
 }
 
-.synsonics-logo__glow,
-.synsonics-logo__stroke {
-  display: block;
-  font: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
-  white-space: nowrap;
-}
-
-.synsonics-logo__glow {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  pointer-events: none;
-  z-index: 0;
-  color: transparent;
-  -webkit-text-stroke: 7px var(--logo-orange);
-  text-stroke: 7px var(--logo-orange);
-  filter: blur(4px);
-  opacity: 0.75;
-}
-
-.synsonics-logo__stroke {
-  position: relative;
-  z-index: 2;
-  color: transparent;
-  -webkit-text-stroke: var(--logo-stroke) var(--logo-red);
-  text-stroke: var(--logo-stroke) var(--logo-red);
-  paint-order: stroke fill;
-}
-
 .synsonics-logo:hover {
+  color: #000000;
+  text-shadow: none;
   text-decoration: none;
-  filter: drop-shadow(0 0 20px rgba(255, 50, 60, 0.85))
-    drop-shadow(0 0 40px rgba(255, 80, 40, 0.35));
+  filter: drop-shadow(0 0 6px rgba(255, 40, 80, 0.85))
+    drop-shadow(0 0 15px rgba(255, 40, 80, 0.75))
+    drop-shadow(0 0 40px rgba(255, 40, 80, 0.65))
+    drop-shadow(0 0 100px rgba(255, 40, 80, 0.55));
 }
 
 .site-nav {
@@ -573,13 +546,7 @@ h2 {
 
 @media (max-width: 760px) {
   .synsonics-logo {
-    --logo-stroke: 2.5px;
-    font-size: clamp(0.82rem, 3.1vw, 1.05rem);
-    letter-spacing: 0.07em;
-  }
-
-  .synsonics-logo__glow {
-    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-width: 1.5px;
   }
 
   .logo-stage {
