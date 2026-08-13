@@ -8,6 +8,8 @@ Open `index.html` in your browser to preview.
 
 ## Customize
 
+- /midi-tone/ screen reference for PiDI / midi-tone is included
+
 - Replace placeholder text in `index.html`
 - Update styles in `styles.css`
 - Replace contact links with your real profiles
