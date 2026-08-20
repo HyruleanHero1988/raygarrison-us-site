@@ -8,7 +8,7 @@ Open `index.html` in your browser to preview.
 
 ## Customize
 
-- /midi-tone/ screen reference for PiDI / midi-tone is included
+- `/midi-tone/` PiDI screen reference is bundled at deploy from [pi-midi-toolkit](https://github.com/HyruleanHero1988/pi-midi-toolkit) (`tools/midi-tone/docs/`), same pattern as `/hourly/`
 
 - Replace placeholder text in `index.html`
 - Update styles in `styles.css`
