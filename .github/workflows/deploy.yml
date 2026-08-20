@@ -39,7 +39,7 @@ jobs:
           git clone --depth 1 https://github.com/HyruleanHero1988/pi-midi-toolkit.git _pidi-src
           rm -rf midi-tone
           mkdir -p midi-tone
-          cp -r _pidi-src/tools/midi-tone/docs/. midi-tone/
+          cp -r _pidi-src/apps/pidi/docs/. midi-tone/
           rm -rf _pidi-src
 
       - name: Setup Pages
